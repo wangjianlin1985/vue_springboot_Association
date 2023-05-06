@@ -1,0 +1,104 @@
+/* 声明全局样式和项目的初始化样式 */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+table,
+tr,
+td,
+ul,
+li,
+a,
+form,
+input,
+select,
+option,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+html,
+body {
+  background-color: #eeeeee;
+  min-width: 980px;
+  min-height: 600px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  /* 合并边框 */
+}
+
+/* a标签改写成button */
+.a_button {
+  color: #fff;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #02549d;
+  padding: 5px 10px;
+}
+
+/* 竖状蓝条 */
+.blue_column {
+  height: 20px;
+  width: 3px;
+  background-color: #02549d;
+  display: inline-block;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* flex布局 */
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  /* Safari */
+}
+
+/* 换行 */
+.flex_wrap_wrap {
+  flex-wrap: wrap;
+}
+
+.justify_content_between {
+  justify-content: space-between;
+}
+
+.justify_content_around {
+  justify-content: space-around;
+}
+
+.align_items_centeer {
+  align-items: center;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mdt20 {
+  margin: 20px auto;
+  text-align: center;
+}

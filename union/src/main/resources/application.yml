@@ -1,0 +1,65 @@
+#配置DataSourceSpring
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/graduation?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    initialSize: 5
+    maxActive: 100
+    minIdle: 3
+    maxWait: 50000
+  main:
+    banner-mode: "off"
+  #redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0
+  jedis:
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 500
+      min-idle: 0
+  lettuce:
+    shutdown-timeout: 0
+  mail:
+    port: 994
+    host: smtp.163.com
+    username: 15827566085@163.com
+    password: DLOTEBCLPBLSWIZG
+    default-encoding: utf-8
+    properties:
+      mail:
+        smtp:
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+        debug: true
+#    properties:
+#      smtp:
+#        auth: true
+#        timeout: 30000
+#        ssl:
+#          enable: true
+#          required: true
+
+
+
+# Mybatis-Plus
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  typeAliasesPackage: com.claire.bean
+  global-config:
+    field-strategy: not_empty
+    column-underline: true
+    capital-mode: true
+    logic-delete-value: 1
+    logic-not-delete-value: 0
+    db-type: mysql
+    refresh: true
+    cache-enabled: false
+server:
+  port: 8081
+

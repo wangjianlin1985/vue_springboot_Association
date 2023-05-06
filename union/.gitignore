@@ -1,0 +1,21 @@
+# code-generator-api
+.idea_modules/
+*.iml
+code-generator-api.iml
+*.log
+.idea/
+target/
+document/log/
+document/upload/
+
+# code-generator-web
+node_modules/
+dist/
+
+
+.idea
+
+.settings
+.settings/
+
+*.log
